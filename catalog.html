@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f6f1" />
+    <meta name="description" content="Browse carved door designs from Indian CNC Carving and enquire about a product." />
+    <title>Product Collection — Indian CNC Carving</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/catalog.css" />
+  </head>
+  <body class="catalog-page">
+    <a class="skip-link" href="#catalog-main">Skip to products</a>
+    <header class="site-header catalog-header">
+      <div class="header-inner">
+        <a class="brand" href="./index.html#top" aria-label="Indian CNC Carving home">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 15 31 4v12L23 21v30l-11 7V15Zm18-3v13l11-7v27L29 52v9l22-13V15L41 9 30 16Zm15 17 9-5v13l-9 6V29Z" fill="currentColor"/></svg>
+          <span class="brand-name">INDIAN<br />CNC CARVING</span>
+        </a>
+        <nav class="catalog-nav" aria-label="Main navigation"><a href="./index.html#top">Home</a><a href="./index.html#services">Services</a><a class="is-active" href="./catalog.html">Products</a><a href="./index.html#work">Our Work</a><a href="./index.html#contact">Contact</a></nav>
+        <a class="button button-outline catalog-quote" href="./index.html#contact">Get a quote <span class="arrow">→</span></a>
+      </div>
+    </header>
+    <main id="catalog-main" class="catalog-main">
+      <nav class="catalog-breadcrumb" aria-label="Breadcrumb"><a href="./index.html#top">Home</a><span>›</span><span>Products</span></nav>
+      <section class="catalog-intro" aria-labelledby="catalog-title">
+        <p class="section-kicker"><span></span> The collection <span></span></p>
+        <h1 id="catalog-title">Carved to make <em>an impression.</em></h1>
+        <p>Explore our product designs. Select a model to see its details or ask us for a custom quotation.</p>
+      </section>
+      <section class="catalog-browser" aria-label="Browse products">
+        <div class="catalog-toolbar">
+          <div class="catalog-count" id="catalog-count" aria-live="polite"></div>
+          <div class="catalog-filters">
+            <label class="catalog-search-label">Search designs<input id="catalog-search" type="search" placeholder="Search by model" autocomplete="off" /></label>
+            <label>Category<select id="catalog-category"><option value="all">All categories</option></select></label>
+            <label>Sort by<select id="catalog-sort"><option value="code-asc">Model: A to Z</option><option value="code-desc">Model: Z to A</option></select></label>
+          </div>
+        </div>
+        <div class="catalog-grid" id="catalog-grid"></div>
+        <p class="catalog-empty" id="catalog-empty" hidden>No designs match your search. Try another model or category.</p>
+        <nav class="catalog-pagination" id="catalog-pagination" aria-label="Product pages"></nav>
+      </section>
+      <section class="catalog-contact"><div><p class="contact-kicker"><span></span> Have a custom design?</p><h2>Let’s make it <em>real.</em></h2><p>Share your idea and our team can help you choose a design and material.</p></div><a class="button button-gold" href="./index.html#contact">Request a quote <span class="arrow">→</span></a></section>
+    </main>
+    <script type="module" src="./js/catalog.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.product-summary{max-width:440px;margin:0 0 16px;color:#555;font:14px/1.6 var(--sans)}
+.product-info h1{margin-bottom:12px}
+.product-quote{display:inline-block}
+.related-heading-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.related-heading-row h2{margin:0}
+.related-heading-row>a{font:12px var(--sans);color:#9b6725}
+.related-heading-row>a:hover{text-decoration:underline}
+.related-product{cursor:pointer}
+@media(max-width:390px){.product-summary{font-size:13px}}
